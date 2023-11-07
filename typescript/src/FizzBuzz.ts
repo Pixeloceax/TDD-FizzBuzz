@@ -1,3 +1,5 @@
 export const FizzBuzz = (input: number) => {
-  return;
+  if (input % 3 === 0) {
+    console.log("Fizz");
+  } else console.log(input);
 };
