@@ -1,12 +1,12 @@
 # Practice TDD Repository
 
-This repository is dedicated to the practice of test-driven development (TDD) with the FizzBuzz problem as its subject.
+This repository is dedicated to the practice of test-driven development (TDD) with the FizzBuzz game as its subject.
 
 ## Objective
 
-The goal of this repository is to apply the TDD methodology on different languages with the FizzBuzz problem.
+The goal of this repository is to apply the TDD methodology on different languages with the FizzBuzz game.
 
-- Learning to use a new language with a familiar problem
+- Learning to use a new language with a familiar game
 - Learning to use the associated testing frameworks for that language
 - practice TDD
 
