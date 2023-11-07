@@ -2,8 +2,8 @@ import { FizzBuzz } from "../FizzBuzz";
 
 describe("FizzBuzz", () => {
   it('should return "Fizz" for multiples of 3', () => {
-    const expectFizzWhenModuloOF3 = FizzBuzz(3);
-    expect(expectFizzWhenModuloOF3).toBe("Fizz");
+    const resultForMultipleOf3 = FizzBuzz(3);
+    expect(resultForMultipleOf3).toBe("Fizz");
   });
 
   it('should return "Buzz" for multiples of 5', () => {
