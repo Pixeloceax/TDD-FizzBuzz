@@ -1,14 +1,15 @@
-export const FizzBuzz = (input: number) => {
-  if (input % 3 === 0) {
-    console.log("Fizz");
-  }
-  if (input % 5 === 0) {
-    console.log("Buzz");
-  }
-  if (input % 3 && input % 5 === 0) {
+export const FizzBuzz = (numbers: number) => {
+  if (numbers % 3 === 0 && numbers % 5 === 0) {
     console.log("FizzBuzz");
-  }
-  if (input % 3 || input % 5 === 0) {
-    console.log(input);
+  } else if (numbers % 3 === 0) {
+    console.log("Fizz");
+  } else if (numbers % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(numbers);
   }
 };
+
+for (let i = 1; i <= 100; i++) {
+  FizzBuzz(i);
+}
