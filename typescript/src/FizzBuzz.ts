@@ -8,4 +8,7 @@ export const FizzBuzz = (input: number) => {
   if (input % 3 && input % 5 === 0) {
     console.log("FizzBuzz");
   }
+  if (input % 3 || input % 5 === 0) {
+    console.log(input);
+  }
 };
