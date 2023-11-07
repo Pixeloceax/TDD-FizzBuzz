@@ -8,7 +8,9 @@ describe("FizzBuzz", () => {
   });
 
   it('should return "Buzz" for multiples of 5', () => {
-    // TODO: Write test case
+    const logSpy = jest.spyOn(console, "log");
+    FizzBuzz(5);
+    expect(logSpy).toHaveBeenCalledWith("Buzz");
   });
 
   it('should return "FizzBuzz" for multiples of 3 and 5', () => {
