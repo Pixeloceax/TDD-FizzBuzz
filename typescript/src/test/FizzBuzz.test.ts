@@ -20,6 +20,8 @@ describe("FizzBuzz", () => {
   });
 
   it("should return the number for non-multiples of 3 or 5", () => {
-    // TODO: Write test case
+    const logSpy = jest.spyOn(console, "log");
+    FizzBuzz(92);
+    expect(logSpy).toHaveBeenCalledWith(92);
   });
 });
