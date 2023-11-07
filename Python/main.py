@@ -3,5 +3,8 @@
 import FizzBuzz
 
 def main():
-    for i in range(1, 100):
-        FizzBuzz.FizzBuzz(i)
+    for number in range(1, 101):
+        print(FizzBuzz.FizzBuzz(number))
+
+if __name__ == '__main__':
+    main()

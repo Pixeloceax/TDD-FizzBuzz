@@ -1,4 +1,3 @@
-#!/usr/bin/python3
-
-def FizzBuzz(numbers: int):
-    return
+# FizzBuzz.py
+def FizzBuzz(number):
+   return number
