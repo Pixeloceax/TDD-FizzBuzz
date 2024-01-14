@@ -1,5 +1,5 @@
 import unittest
-import source.FizzBuzz as FizzBuzzModule
+import src.FizzBuzz as FizzBuzzModule
 
 class TestFizzBuzz(unittest.TestCase):
     def test_FizzBuzz(self):
