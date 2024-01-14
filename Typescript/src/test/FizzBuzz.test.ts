@@ -2,46 +2,30 @@ import { FizzBuzz } from "../FizzBuzz";
 
 describe("FizzBuzz", () => {
   it('should return "Fizz" for multiples of 3', () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(3);
-    expect(logSpy).toHaveBeenCalledWith("Fizz");
+    expect(FizzBuzz(3)).toEqual("Fizz");
   });
   it('should return "Fizz" for multiples of 3', () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(6);
-    expect(logSpy).toHaveBeenCalledWith("Fizz");
+    expect(FizzBuzz(6)).toEqual("Fizz");
   });
 
   it('should return "Buzz" for multiples of 5', () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(5);
-    expect(logSpy).toHaveBeenCalledWith("Buzz");
+    expect(FizzBuzz(5)).toEqual("Buzz");
   });
   it('should return "Buzz" for multiples of 5', () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(10);
-    expect(logSpy).toHaveBeenCalledWith("Buzz");
+    expect(FizzBuzz(10)).toEqual("Buzz");
   });
 
   it('should return "FizzBuzz" for multiples of 3 and 5', () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(15);
-    expect(logSpy).toHaveBeenCalledWith("FizzBuzz");
+    expect(FizzBuzz(15)).toEqual("FizzBuzz");
   });
   it('should return "FizzBuzz" for multiples of 3 and 5', () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(30);
-    expect(logSpy).toHaveBeenCalledWith("FizzBuzz");
+    expect(FizzBuzz(30)).toEqual("FizzBuzz");
   });
 
   it("should return the number for non-multiples of 3 or 5", () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(92);
-    expect(logSpy).toHaveBeenCalledWith(92);
+    expect(FizzBuzz(92)).toEqual(92);
   });
   it("should return the number for non-multiples of 3 or 5", () => {
-    const logSpy = jest.spyOn(console, "log");
-    FizzBuzz(97);
-    expect(logSpy).toHaveBeenCalledWith(97);
+    expect(FizzBuzz(97)).toEqual(97);
   });
 });
