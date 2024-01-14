@@ -1,15 +1,15 @@
 export const FizzBuzz = (numbers: number) => {
   if (numbers % 3 === 0 && numbers % 5 === 0) {
-    console.log("FizzBuzz");
+    return "FizzBuzz";
   } else if (numbers % 3 === 0) {
-    console.log("Fizz");
+    return "Fizz";
   } else if (numbers % 5 === 0) {
-    console.log("Buzz");
+    return "Buzz";
   } else {
-    console.log(numbers);
+    return numbers;
   }
 };
 
 for (let i = 1; i <= 100; i++) {
-  FizzBuzz(i);
+  console.log(FizzBuzz(i));
 }
